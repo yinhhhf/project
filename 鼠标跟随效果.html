@@ -34,6 +34,7 @@
                 // 判断节流阀是否为空，如果不为空，则证明距离上次执行间隔不足16毫秒
                 if (timer) return;
                 // 设置节流阀定时器
+
                 timer = setTimeout(function() {
                     angel.css('left', e.pageX - 38 + 'px').css('top', e.pageY - 55 + 'px');
                     // 当设置了鼠标跟随效果后，清空timer节流阀，方便下次开启延时器
